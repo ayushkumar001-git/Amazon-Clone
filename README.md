@@ -1,16 +1,442 @@
-# 🛒 Amazon Clone
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-bar border">
+                <div class="navlogo"></div>
+            </div>
 
-**Amazon Clone** built using modern web technologies.  
-This project replicates the core features of Amazon, such as user authentication, product listing, cart management, and checkout functionality.
+            <div class="nav-address border">
+                <p class="add-first">Dilever to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
 
----
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
 
-## 🚀 Features
+            <div class="nav-country border">
+                <i class="fa-brands fa-canadian-maple-leaf"></i>
+            </div>
 
-- 🔑 User authentication (Sign up / Login / Logout)
-- 🛍️ Browse products by categories
-- 🛒 Add to Cart & Remove from Cart
-- 💳 Checkout system (dummy payment gateway integration)
-- 🔎 Search and filter products
-- 📱 Responsive design (mobile & desktop friendly)
-- ⚡ Fast and optimized
+            <div class="nav-cou-name border">
+                <p>CL</p>
+            </div>
+
+            <div class="nav-singin border">
+                <p id="hello">Hello, sing in </p>
+                <p class="nav-acc">Account & Lists </p>
+            </div>
+
+            <div class="nav-singin border">
+                <p id="hello">returns</p>
+                <p class="nav-acc">& Orders </p>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+
+        </div>
+
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+
+            <div class="panel-ops">
+                <p>MX Player</p>
+                <p>Sell</p>
+                <p>Bestsellers</p>
+                <p>Today's Deals</p>
+                <p>Mobiles</p>
+                <p>Fashion</p>
+                <p>Prime</p>
+                <p>Customer Service</p>
+                
+            </div>
+
+            <div class="panel-last">
+                Shop deals in electronics
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a>Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+
+    <div class="shop-section">
+        <div class="box1 box border">
+            <div class="box-content">
+                <h3>Cloths</h3>
+                <div class="box-img" style="background-image: url('box1_image.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box2 box border">
+            <div class="box-content">
+                <h3>Personal & Health care</h3>
+                <div class="box-img" style="background-image: url('box2_image.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box border">
+            <div class="box-content">
+                <h3>Furniture</h3>
+                <div class="box-img" style="background-image: url('box3_image.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box4 box border">
+            <div class="box-content">
+                <h3>Electronics</h3>
+                <div class="box-img" style="background-image: url('box4_image.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+
+        <div class="box1 box border">
+            <div class="box-content">
+                <h3>Makeup & Beauty</h3>
+                <div class="box-img" style="background-image: url('box5_image.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box2 box border">
+            <div class="box-content">
+                <h3>Peadygree</h3>
+                <div class="box-img" style="background-image: url('box6_image.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box border">
+            <div class="box-content">
+                <h3>Tour & Travels</h3>
+                <div class="box-img" style="background-image: url('box7_image.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box4 box border">
+            <div class="box-content">
+                <h3>New Arival</h3>
+                <div class="box-img" style="background-image: url('box8_image.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+    </div> 
+
+
+    <div class="shop-section">
+        <div class="box1 box border">
+            <div class="box-content">
+                <h3>Automotive essentials </h3>
+                <div class="box-img" style="background-image: url('car.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box2 box border">
+            <div class="box-content">
+                <h3>Trends of the season</h3>
+                <div class="box-img" style="background-image: url('oo.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box border">
+            <div class="box-content">
+                <h3>Best of furnishing brands</h3>
+                <div class="box-img" style="background-image: url('bed.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box4 box border">
+            <div class="box-content">
+                <h3>Desidiya ® 20 Photo Clip LED Lights </h3>
+                <div class="box-img" style="background-image: url('light.jpg');"> </div>
+            <p>See more</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="phone-section">
+        <div class="phone border">
+            <div class="phone-content">
+                <h2>ISamsung Galaxy S25 Ultra 5G AI Smartphoneo</h2>
+                <div class="phone-img" style="background-image: url('sam.jpg');"></div>
+                <h1>₹1,29,999</h1>
+                    <br>
+                <h4>
+                    Save ₹5,000 with coupon
+                    FREE delivery Tue, 13 May
+                    Service: Installation</h4>
+                    <br>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="phone border">
+            <div class="phone-content">
+                <h2>Samsung Galaxy M35 5G (Thunder Grey,6GB RAM)</h2>
+                <div class="phone-img" style="background-image: url('m35.jpg');"></div>
+                <h1>₹18,499</h1>
+                <br>
+                <h4> (33% off)
+                    Save ₹500 with coupon
+                    FREE delivery Tue, 13 May</h4>
+                    <br>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="phone border">
+            <div class="phone-content">
+                <h2>iQOO Z9s 5G (Onyx Green, 8GB RAM)</h2>
+                <div class="phone-img" style="background-image: url('iq.jpg');"></div>
+                <h1>₹18,999</h1>
+                <br>
+                <h4> (27% off)
+                    Save extra with EMISave extra FREE delivery Thu, 15 May</h4>
+                    <br>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="phone border">
+            <div class="phone-content">
+                <h2>realme GT 7 Pro (Galaxy Grey,12GB+256GB)</h2>
+                <div class="phone-img" style="background-image: url('real.jpg');"></div>
+                <h1>₹57,998 </h1>
+                <br>
+                <h4>(23% off)
+                    Save extra with No Cost EMI
+                    FREE delivery Tue, 13 May</h4>
+                    <br>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="phone border">
+            <div class="phone-content">
+                <h2>OnePlus 12 (Flowy Emerald, 12GB RAM)</h2>
+                <div class="phone-img" style="background-image: url('one.jpg');"></div>
+                <h1>₹51,998</h1>
+                <br>
+                <h4>(20% off)
+                    Save extra with No Cost EMI
+                    FREE delivery Sun, 18 May</h4>
+                    <br>
+                <p>See more</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="girl-section">
+        <div class="girl">
+            <div class="girl-content">
+                <br>
+                <h1>Additional items to explore</h1>
+                <p>See more</p>
+            <div class="girl-img" style="background-image: url(gi.png);"></div>
+            
+            </div>
+            
+        </div>
+
+        
+    </div>
+
+    <div class="sing">
+        <h1>See personalized recommendations</h1>
+        <br>
+            <button class="sing-in">sign-in</button>
+        <br>
+        <br>
+        <p>New customer? Start here</p>
+    </div>
+
+    <footer>
+
+        <div class="foot-panel1">
+            <br>
+            <p>Back to top</p>
+        </div>
+
+        <div class="foot-panel2">
+        
+            <ul>
+                <p>Get to Know Us</p>
+                <a>About Amazon</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+                <a>Amazon Science</a>
+
+            </ul>
+
+            <ul>
+                <p>Connect with Us</p>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>Instagram</a>
+
+            </ul>
+            
+
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell on Amazon</a>
+                <a>Sell under Amazon Accelerator</a>
+                <a>Protect and Build Your Brand</a>
+                <a>Amazon Global Selling</a>
+                <a>Supply to Amazon</a>
+                <a>Become an Affiliater</a>
+                <a>Fulfilment by Amazon</a>
+                <a>Advertise Your Products</a>
+                <a>Amazon Pay on Merchants</a>
+
+            </ul>
+            
+
+            <ul>
+                <p>Your Account</p>
+                <a>Returns Centre</a>
+                <a>Recalls and Product Safety Alerts</a>
+                <a>100% Purchase Protection</a>
+                <a>Amazon App Download</a>
+                <a>Help</a>
+
+            </ul>
+              
+        </div>
+
+        <div class="foot-panel3">
+            <div class="foot-logo"></div>
+            <div class="world border">
+                <i class="fa-solid fa-globe"></i>
+                <select class="op">
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Spanish</option>
+                    <option>Greman</option>
+                    <option>Russian</option>
+                    <option>Japnese</option>
+                </select>
+                
+            </div>
+
+            <div class="world2 border">
+                <div class="ind">
+
+                    <p>INDIA</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="foot-panel4">
+        
+            <ul class="a">
+                <p>AbeBooks</p>
+                <a>Books, art</a>
+                <a>& collectibles</a>
+
+            </ul>
+            
+
+            <ul class="a">
+                <p>Amazon Web Services</p>
+                <a>Scalable Cloud</a>
+                <a>Computing Service</a>
+
+            </ul>
+            
+
+
+            <ul class="a">
+                <p>Audible</p>
+                <a>Download</a>
+                <a>Audio Books</a>
+                
+            </ul>
+            
+            <ul class="a">
+                <p>IMDb</p>
+                <a>Movies, TV</a>
+                <a>& Celebrities</a>
+
+            </ul>
+              
+        </div>
+
+        <div class="foot-panel4">
+        
+            <ul class="a">
+                <p>Shopbop</p>
+                <a>Designer</a>
+                <a>Fashion Brands</a>
+
+            </ul>
+            
+            <ul class="a">
+                <p>Amazon Business</p>
+                <a>Everything For</a>
+                <a>Your Business</a>
+
+            </ul>
+            
+            <ul class="a">
+                <p>Prime Now</p>
+                <a>2-Hour Delivery</a>
+                <a>on Everyday Items</a>
+                
+            </ul>
+            
+            <ul class="a">
+                <p>Amazon Prime Music</p>
+                <a>100 million songs, ad-free</a>
+                <a>Over 15 million podcast episodes</a>
+
+            </ul>
+              
+            
+
+
+        </div>
+
+        <div class="panel5">
+            <ul class="q">
+                <p>Conditions of Use & Sale Privacy Notice Interest-Based Ads</p>
+                <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+
+            </ul>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+
+
